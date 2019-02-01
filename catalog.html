@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+</head>
+<body>
+        <header class='site-header'>
+                <section class='site-header'>
+                  <!--Add the img DEVICE after getting the skills-->
+                  <ul class='header_top'>
+                      <li class='header_search'>
+                        <form action='/action_page.ru' method='get'> <!--There will be the correct link-->
+                          <input name='Site_search' type='text' placeholder="Поиск по сайту">
+                        </form>
+                      </li>
+                      <li class='header_buttons_usersactions'>
+                        <ul>
+                          <li class='header_button'>
+                            <button class='header_button_login'>
+                              <!--Add the type, popapp-->
+                              Войти
+                            </button>
+                          </li>
+                          <li class='header_button'>
+                              <button class='header_button_comparting'>
+                                <!--Add the type, link-->
+                                Сравнить              
+                              </button>
+                          </li>
+                          <li class='header_button'>
+                            <button class='header_button_basket_shopcart'>
+                              Корзина
+                                <!--Add the the type, link-->
+                            </button>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <nav class='header_nav'>
+                      <ul class='header_middle'>
+                        <li class='header_nav_catalog'>
+                          <!--Add popapp-->
+                          КАТАЛОГ ТОВАРОВ
+                        </li>
+                        <li class='header_nav_delivery'>
+                          <button class='header_nav_delivery'>
+                          <!--Add the type, link-->
+                            ДОСТАВКА
+                          </button>
+                        </li>
+                        <li class='header_nav_guarantee'>
+                          <button class='header_nav_guarantee'>
+                            <!--Add the type, link-->
+                            ГАРАНТИЯ
+                          </button>
+                        </li>
+                        <li class='header_nav_contacts'>
+                          <button class='header_nav_contacts'>
+                            КОНТАКТЫ
+                          </button>
+                        </li>
+                      </ul>
+                    </nav>
+                </section>
+              </header>
+              <main>
+                <h1>Моноподы для селфи</h1>
+                <ul class='main_file-root'>
+                    <li>Главная</li>
+                    <!--add the '>' -->
+                    <li>Каталог товаров</li>
+                    <!--add the '>'-->
+                    <li>Моноподы для селфи</li>
+                    <!--add the '>'-->
+                </ul>
+                <div class='main_filter'>
+                    <ul>
+                        <br>
+                        <li class='main_filter_cost'>
+                            <h4>Стоимость</h4>
+                            <form action='action_page' name='cost' method='get'>
+                                <!--Add an URL-->
+                                <input name='cost' type='range' min=0 max=20000 step=1>
+                            </form>
+                        </li>
+                        <hr>
+                        <li class='main_filter_color'>
+                            <h4>Цвет</h4>
+                            <form action='' name='color' method='get'>
+                            <!--Add an URL-->
+                                <input type='checkbox' name='color' value='Черный' checked> Черный<br>
+                                <input type='checkbox' name='color' value='Белый'> Белый <br>
+                                <input type='checkbox' name='color' value='Синий' checked> Синий <br>
+                                <input type='checkbox' name='color' value='Красный' checked> Красный <br>
+                                <input type='checkbox' name='color' value='Розовый'> Розовый <br>
+                            </form>
+                            <hr>
+                            <form action='' name='Bluetooth' method='get'>
+                                <input type='radio' name='Bluetooth' value='Yes'> Есть <br>
+                                <input type='radio' name='Bluetooth' value='No'> Нет <br>
+                                <br>
+                                <input type='submit' value='Показать'>
+                                <!--Накосяпурил с формами - нужна помощь-->
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class='main_catalog'>
+                  <ul>
+                    <li class='main_catalog_cell'>
+                      <a href='URL.img' class='main_catalog_cell_image1'></a>
+                      <!--Add image URL-->
+                      <ul>
+                        <li><p class='main_catalog_cell_comment-text'> Любительская селфи-палка</p></li>
+                        <li><p class='main_catalog_cell_comment-prise'> 500 руб.</p></li>
+                      </ul>
+                    </li>
+                    <li class='main_catalog_cell'>
+                      <a href='URL.img' class='main_catalog_cell_image2'></a>
+                      <!--Add image URL-->
+                      <ul>
+                        <li><p class='main_catalog_cell_comment-text'> Профессиональная селфи-палка</p></li>
+                        <li><p class='main_catalog_cell_comment-prise'> 1500 руб.</p></li>
+                     </ul>
+                    </li>
+                    <li class='main_catalog_cell'>
+                        <a href='URL.img' class='main_catalog_cell_image3'></a>
+                        <!--Add image URL-->
+                        <ul>
+                          <li><p class='main_catalog_cell_comment-text'> Непотопляемая селфи-палка</p></li>
+                          <li><p class='main_catalog_cell_comment-prise'> 4900 руб.</p></li>
+                        </ul>
+                    </li>
+                    <li class='main_catalog_cell'>
+                        <a href='URL.img' class='main_catalog_cell_image4'></a>
+                        <!--Add image URL-->
+                        <ul>
+                          <li><p class='main_catalog_cell_comment-text'> Селфи-палка «Следуй за мной»</p></li>
+                          <li><p class='main_catalog_cell_comment-prise'> 4900 руб.</p></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+                <nav>
+                  <section class='main_page-number-bar'>
+                      <ul>
+                        <li>
+                          <button class='main_page-number-bar_previous' type='button'>Назад</button>
+                        </li>
+                        <li>
+                          <ul>
+                            <li class='main_page-number-bar_first'>1</li>
+                            <li class='main_page-number-bar_second'>
+                              <button type='button'>2</button>
+                            </li>
+                            <li class='main_page-number-bar_third'>
+                              <button type='button'>3</button>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <button class='main_page-number-bar_next' type='button'>Назад</button>
+                        </li>
+                      </ul>
+                  </section>
+                </nav>
+              </main>
+                        <footer class='site-footer'>
+                            <section class='site-footer'>
+                            <!--Add the img DEVICE after getting the skills-->
+                              <ul class='footer_buttons_top'>
+                                <li class='button_usersaction'>
+                                  <button class='button_usersaction'>
+                                    <!--Add the type, popapp-->
+                                    Войти
+                                  </button>
+                                </li>
+                                <li class='button_usersaction'>
+                                    <button class='button_usersaction'>
+                                    <!--Add the type, link-->
+                                      Сравнить              
+                                    </button>
+                                </li>
+                                <li class='button_usersaction'>
+                                  <button class='button_usersaction'>
+                                    Корзина
+                                      <!--Add the the type, link-->
+                                  </button>
+                                </li>
+                              </ul>
+                              <ul class='footer_middle'>
+                                <li class='footer_address'>
+                                  <address> г. Москва, ул. Строителей, 15 </address>
+                                </li>
+                                <nav class='footer_nav'>
+                                  <ul>
+                                    <li class='nav_delivery'>
+                                        <button class='nav_delivery'>
+                                        <!--Add the type, link-->
+                                          ДОСТАВКА
+                                        </button>
+                                      </li>
+                                      <li class='nav_guarantee'>
+                                        <button class='nav_guarantee'>
+                                          <!--Add the type, link-->
+                                          ГАРАНТИЯ
+                                        </button>
+                                      </li>
+                                      <li class='nav_contacts'>
+                                        <button class='nav_contacts'>
+                                          КОНТАКТЫ
+                                        </button>
+                                      </li>
+                                  </ul>
+                                </nav>
+                                <li>
+                                  <p class='footer_tel'>Тел: +7(495)495-95-95</p>
+                                </li>
+                              </ul>
+                              <ul class='footer_bottom'>
+                                <li class='footer_bottom_SVG'>
+                                  <!--Add SVG-image-->
+                                </li>
+                                <li>
+                                  <ul class='buttoms_social'>
+                                  <!--Add URLs to all links-->
+                                    <li class='social_facebook'>
+                                      <button class='social_facebook'>
+                                        <!--Add type to button-->
+                                        <img src='URL' alt='Фейсбук'>
+                                        <!--Add URL-->
+                                      </button>
+                      
+                                    </li>
+                                    <li class='social_instagram'>
+                                      <button class='social_instagram'>
+                                      <!--Add type to button-->
+                                        <img src='URL' alt='Инстаграм'>
+                                        <!--Add URL-->
+                                      </button>
+                                    </li>
+                                    <li class='social_twitter'>
+                                      <button class='social_twitter'>
+                                      <!--Add type to button-->
+                                        <img src='URL' alt='Твиттер'>
+                                        <!--Add URL-->
+                                      </button>
+                                    </li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <input type='image' src='url' alt='logo_HTMLacademy'>
+                                  <!--Add URL-->
+                                </li>
+                              </ul>
+                            </section>
+                        </footer>
+</body>
+</html>
