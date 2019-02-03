@@ -6,186 +6,155 @@
   </head>
   <body>
     <header class='site_header'>
-      <section class='site_header'>
-        <!--Add the img DEVICE after getting the skills-->
-        <ul class='header_top'>
-            <li class='header_search'>
-              <form action='/action_page.ru' method='get'> <!--There will be the correct link-->
+        <div class='header_logo logo'>
+          <img src='#'>
+        </div>
+        <!--Add the img logo after getting the skills-->
+        <div class='header_top'>
+            <div class='header_search'>
+              <form action='/action_page.ru' method='get'>
+                <!--There will be the correct link-->
                 <input name='Site_search' type='text' placeholder="Поиск по сайту">
               </form>
-            </li>
-            <li class='header_buttons_usersactions'>
-              <ul>
-                <li class='header_button'>
-                  <button class='header_button_login'>
+            </div>
+              <ul class='header_usersactions useractions'>
+                <li class='useractions_item useractions_item--left'>
+                  <a href='#' class='useractions_item useractions_link--singin'>
                     <!--Add the type, popapp-->
                     Войти
-                  </button>
+                  </a>
                 </li>
-                <li class='header_button'>
-                    <button class='header_button_comparting'>
+                <li class='useractions_item'>
+                    <a href='#' class='useractions_item useractions_link--compare'>
                       <!--Add the type, link-->
-                      Сравнить              
-                    </button>
+                      Сравнить
+                    </a>
                 </li>
-                <li class='header_button'>
-                  <button class='header_button_basket_shopcart'>
+                <li class='useractions_item'>
+                  <a href='#' class='useractions_item useractions_link--singin'>
                     Корзина
                       <!--Add the the type, link-->
-                  </button>
+                  </a>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <nav class='header_nav'>
-            <ul class='header_middle'>
-              <li class='header_nav_catalog'>
+        </div>
+          <nav class='header_middle'>
+            <ul class='header_nav'>
+              <li class='header_nav-item header_nav-item--catalog dropdown'>
                 <!--Add popapp-->
                 КАТАЛОГ ТОВАРОВ
               </li>
-              <li class='header_nav_delivery'>
-                <button class='header_nav_delivery'>
+              <li class='header_nav-item header_nav-item--delivery'>
+                <a href='#'>
                 <!--Add the type, link-->
                   ДОСТАВКА
-                </button>
+                </a>
               </li>
-              <li class='header_nav_guarantee'>
-                <button class='header_nav_guarantee'>
+              <li class='header_nav-item header_nav-item--guarantee'>
+                <a href='#'>
                   <!--Add the type, link-->
                   ГАРАНТИЯ
-                </button>
+                </a>
               </li>
-              <li class='header_nav_contacts'>
-                <button class='header_nav_contacts'>
+              <li class='header_nav-item header_nav-item--contacts'>
+                <a href='#'>
                   КОНТАКТЫ
-                </button>
+                </a>
               </li>
             </ul>
           </nav>
-      </section>
     </header>
-    <main>
+    <main class='main'>
       <!--Add after the getting skills-->
-      <div class='main_about-us'>
+      <div class='main_item-left '>
         <!--Add SVG-image after getting the skill of it-->
-        <h1>О нас</h1>
-        <p class='main_about-us_description'>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас
-        </p>
-        <p class='main_about-us_description'>
-          Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE работает со многиими транспортными компаниями:
-        </p>
-        <ul class='main_delivery-companies'>
+        <h2 class='item-left--title'>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+        <p>Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE работает со многиими транспортными компаниями:</p>
+        <ul class='item-left--delivery'>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <p class='main_strikeouted'>
-          <strike>ПОДРОБНЕЕ О НАС</strike>
-        </p>
-      </div>
-      <div class='main_contacts'>
-        <h1>Контакты</h1>
-        <p class='main_contacts_description'>
-          Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете проверить работоспособность покупку. Всякое бывает.
-        </p>
+        <a href='#' class='btn main_item-left-btn'>подробне о нас</a>
+        </div>
+      <div class='main_item-right'>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете проверить работоспособность покупку. Всякое бывает.</p>
         <map>
-          <area name='main_contacts_map'>
+          <area name='map'>
           <!--Add the atributes after getting the skills-->
         </map>
-        <p class='main_strikeouted'>
-          <strike>НАПИШИТЕ НАМ</strike>
-        </p>
+        <a href='#' class='btn main_item-right-btn'>Напишите нам</a>
       </div>
     </main>
     <footer>
-      <section class='site-footer'>
-      <!--Add the img DEVICE after getting the skills-->
-        <ul class='footer_buttons_top'>
-          <li class='button_usersaction'>
-            <button class='button_usersaction'>
+      <div class='footer_item-top'>
+        <div class='footer_logo logo'>
+            <img src='#'>
+        </div>
+        <!--Add the img DEVICE after getting the skills-->
+        <ul class='footer_usersactions useractions'>
+          <li class='useractions_item'>
+            <a href='#' class='useractions_item useractions_link--singin'>
               <!--Add the type, popapp-->
               Войти
-            </button>
+            </a>
           </li>
-          <li class='button_usersaction'>
-              <button class='button_usersaction'>
+          <li class='useractions_item'>
+            <a href='#' class='useractions_item useractions_link--compare'>
               <!--Add the type, link-->
-                Сравнить              
-              </button>
+              Сравнить
+            </a>
           </li>
-          <li class='button_usersaction'>
-            <button class='button_usersaction'>
+          <li class='useractions_item'>
+            <a href='#' class='useractions_item useractions_link--singin'>
               Корзина
-                <!--Add the the type, link-->
-            </button>
+              <!--Add the the type, link-->
+            </a>
           </li>
         </ul>
-        <ul class='footer_middle'>
-          <li class='footer_address'>
-            <address> г. Москва, ул. Строителей, 15 </address>
-          </li>
-          <nav class='footer_nav'>
-            <ul>
-              <li class='nav_delivery'>
-                  <button class='nav_delivery'>
-                  <!--Add the type, link-->
-                    ДОСТАВКА
-                  </button>
-                </li>
-                <li class='nav_guarantee'>
-                  <button class='nav_guarantee'>
-                    <!--Add the type, link-->
-                    ГАРАНТИЯ
-                  </button>
-                </li>
-                <li class='nav_contacts'>
-                  <button class='nav_contacts'>
-                    КОНТАКТЫ
-                  </button>
-                </li>
-            </ul>
-          </nav>
-          <li>
-            <p class='footer_tel'>Тел: +7(495)495-95-95</p>
-          </li>
-        </ul>
-        <ul class='footer_bottom'>
-          <li class='footer_bottom_SVG'>
-            <!--Add SVG-image-->
-          </li>
-          <li>
-            <ul class='buttoms_social'>
+      </div>
+      <div class='footer_item-middle'>
+        <div class='footer_item-left'>
+          <address> г. Москва, ул. Строителей, 15 </address>
+        </div>
+        <div class='footer_item_nav'>
+          <a href='#' class='footer_item-nav--delivery'>доставка</a>
+          <a href='#' class='footer_item-nav--guarantee'>гарантия</a>
+          <a href='#' class='footer_item-nav--contacts'>контакты</a>
+        </div>
+      </div>
+      <div class='footer_item-rigth'>
+        <p class='footer_tel'>Тел: +7(495)495-95-95</p>
+      </div>
+        <div class='footer_item_bottom'>
+          <!--Add SVG-image-->
+          <!--ЗАКОНЧИЛ ТУТ!!!!!!!!!!!!!!!!!-->
+          <div class=' links_social'>
             <!--Add URLs to all links-->
-              <li class='social_facebook'>
-                <button class='social_facebook'>
-                  <!--Add type to button-->
-                  <img src='URL' alt='Фейсбук'>
-                  <!--Add URL-->
-                </button>
-              </li>
-              <li class='social_instagram'>
-                <button class='social_instagram'>
-                <!--Add type to button-->
-                  <img src='URL' alt='Инстаграм'>
-                  <!--Add URL-->
-                </button>
-              </li>
-              <li class='social_twitter'>
-                <button class='social_twitter'>
-                <!--Add type to button-->
-                  <img src='URL' alt='Твиттер'>
-                  <!--Add URL-->
-                </button>
-              </li>
+              <a img='#' href='#' class='links_social--facebook'>
+            <li class='social_instagram'>
+              <button class='social_instagram'>
+              <!--Add type to button-->
+                <img src='URL' alt='Инстаграм'>
+                <!--Add URL-->
+              </button>
+            </li>
+            <li class='social_twitter'>
+              <button class='social_twitter'>
+              <!--Add type to button-->
+                <img src='URL' alt='Твиттер'>
+                <!--Add URL-->
+              </button>
+            </li>
             </ul>
           </li>
           <li>
             <input type='image' src='url' alt='logo_HTMLacademy'>
             <!--Add URL-->
           </li>
-        </ul>
-      </section>
+        </div>
     </footer>
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   </body>
