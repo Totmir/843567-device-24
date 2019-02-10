@@ -22,7 +22,7 @@
         </div>
           <ul class='header_usersactions useractions'>
             <li class='useractions_item useractions_item--left'>
-              <a href='#' class='useractions_item useractions_link--singin'>
+              <a href='#' class='useractions_item useractions_link--signin'>
                 <!--Add the type, popapp-->
                 Войти
               </a>
@@ -34,7 +34,7 @@
               </a>
             </li>
             <li class='useractions_item'>
-              <a href='#' class='useractions_item useractions_link--singin'>
+              <a href='#' class='useractions_item useractions_link--signin'>
                 Корзина
                   <!--Add the the type, link-->
               </a>
@@ -69,84 +69,103 @@
   </header>
   <main>
     <h1>Моноподы для селфи</h1>
-    <br>
-    <a href="#" class='site-root_item'><p>Главная</p></a>>
-    <a href="#" class='site-root_item'><p>Каталог товаров</p></a>>
-    <a href="#" class='site-root_item'><p>Моноподы для селфи</p></a>>
-    <div class='main_filter'>
-      <p class='filter_item'>Фильтр:</p>
-        <hr>
-        <p class='filter_item'>Стоимость:</p>
-          <form action='#' name='cost' method='get'>
-            <!--Add an URL-->
-            <input name='cost' type='range' min=0 max=20000 step=1>
-          </form>
-        <hr>
-        <p class='filter_item'>Цвет</p>
-        <form action='#' name='color' method='get'>
-        <!--Add an URL-->
-          <input type='checkbox' name='color' value='Черный' checked> Черный<br>
-          <input type='checkbox' name='color' value='Белый'> Белый <br>
-          <input type='checkbox' name='color' value='Синий' checked> Синий <br>
-          <input type='checkbox' name='color' value='Красный' checked> Красный <br>
-          <input type='checkbox' name='color' value='Розовый'> Розовый <br>
-        </form>
-        <hr>
-        <p class='filter_item'>Bluetooth</p>
-        <form action='' name='Bluetooth' method='get'>
-          <input type='radio' name='Bluetooth' value='Yes'> Есть <br>
-          <input type='radio' name='Bluetooth' value='No'> Нет <br>
-          <br>
-          <input type='submit' value='Показать'>
-          <!--Накосяпурил с формами - нужна помощь-->
-        </form>
-        </li>
-      </ul>
-    </div>
-    <div class='main_catalog'>
-      <div class='catalog_container'>
-        <div class='catalog_container-item'>
-          <!--Add image URL-->
-          <a href='URL.img' class='container-item_cell'><img src='#' alt="selfie-stick_amateur"></a>
-          <br>
-          <a href=''><p class='container-item_text--bold'> Любительская селфи-палка</p></a>
-          <p> 500 руб.</p>
-        </div> 
-        <div class='catalog_container-item'>
-          <!--Add image URL-->
-          <a href='URL.img' class='container-item_cell'><img src='#' alt="selfie-stick_prof"></a>
-          <br>
-          <a href=''><p class='container-item_text--bold'> Профессиональная селфи-палка</p></a>
-          <p> 1500 руб.</p>
-        </div> 
-        <div class='catalog_container-item'>
-          <!--Add image URL-->
-          <a href='URL.img' class='container-item_cell'><img src='#' alt="selfie-stick_undrown"></a>
-          <br>
-          <a href=''><p class='container-item_text--bold'> Непотопляемая селфи-палка</p></a>
-          <p> 2500 руб.</p>
-        </div>  
-        <div class='catalog_container-item'>
-          <!--Add image URL-->
-          <a href='URL.img' class='container-item_cell'><img src='#' alt="selfie-stick_follow-me"></a>
-          <br>
-          <a href=''><p class='container-item_text--bold'> Селфи-палка «Следуй за мной»</p></a>
-          <p> 4900 руб.</p>
-        </div>
-        <div class='catalog_nav'>
-          <div class='nav_wrapper--left'>
-            <button class='catalog_nav--btn' type='button'>Назад</button>
+      <div class='block_breadcrumps'>
+        <p><a href="#" class='site-root_item'>Главная</a></p>
+        <p><a href="#" class='site-root_item'>Каталог товаров</a></p>
+        <p><a href="#" class='site-root_item'>Моноподы для селфи</a></p>
+      </div>
+      <div class='main_container'>
+        <div class='grid_row'>
+          <p class='filter'>Фильтр:</p>
+          <div>
+            <!--sort-->
           </div>
-          <div class='nav_wrapper--middle'>
-            <button class='catalog_nav--btn' type='button'>1</button>
-            <button class='catalog_nav--btn' type='button'>2</button>
-            <button class='catalog_nav--btn' type='button'>3</button>
+          <div>
+            <!--по типу-->
+            <!--по цене-->
+            <!--по популярности-->
           </div>
-          <div class='nav_wrapper--right'>
-            <button class='catalog_nav--btn' type='button'>Вперед</button>
-          </div> 
         </div>
-    </div>
+          <hr>
+            <form action='#' name='filter' method='get'>
+              <!--Add an action-->
+              <fieldset class='filter-item'>
+                <legend>Стоимость:</legend>
+                <input name='cost' type='range' min=0 max=20000 step=1>
+                <hr>
+              </fieldset>
+              <fieldset class='filter-item'>
+                <legend>Цвет</legend>
+                <label><input type='checkbox' name='color' value='Черный' checked>Черный</label>
+                <label><input type='checkbox' name='color' value='Белый'>Белый</label>
+                <label><input type='checkbox' name='color' value='Синий' checked>Синий</label>
+                <label><input type='checkbox' name='color' value='Красный' checked> Красный</label>
+                <label><input type='checkbox' name='color' value='Розовый'> Розовый</label>
+              </fieldset>
+              <fieldset class='filter-item'>
+                <legend>Bluetooth</legend>
+                <input type='radio' name='Bluetooth' value='Yes'> Есть
+                <input type='radio' name='Bluetooth' value='No'> Нет
+                <input type='submit' value='Показать'>
+              </fieldset>
+            </form>
+        </div>
+        <div class='main_catalog'>
+          <div class='catalog_container'>
+            <div class='catalog_item'>
+              <div class='catalog_item item--image'>
+                <a href='URL.img' class='catalog-item_cell'><img src='#' alt="selfie-stick_amateur"></a>
+                <!--Add image URL and hidden block 'to buy'-->
+              </div>
+              <div class='catalog_item item--text'>
+                <p class='catalog_item_text--bold'><a href='#'> Любительская селфи-палка</a></p>
+                <!--Add URL-->
+                <p> 500 руб.</p>
+              </div>
+            </div>
+            <div class='catalog_item'>
+              <div class='catalog_item item--image'>
+                <a href='URL.img' class='catalog-item_cell'><img src='#' alt="selfie-stick_prof"></a>
+                <!--Add image URL and hidden block 'to buy'-->
+              </div>
+              <div class='catalog_item item--text'>
+                <p class='catalog_item_text--bold'><a href='#'> профессиональная селфи-палки</a></p>
+                <!--Add URL-->
+                <p> 500 руб.</p>
+              </div>
+            </div>
+              <div class='catalog_item'>
+                <div class='catalog_item item--image'>
+                  <a href='URL.img' class='catalog-item_cell'><img src='#' alt="selfie-stick_unsinkable"></a>
+                  <!--Add image URL and hidden block 'to buy'-->
+                </div>
+                <div class='catalog_item item--text'>
+                  <p class='catalog_item_text--bold'><a href='#'> непотопляемая селфи-палка</a></p>
+                  <!--Add URL-->
+                  <p> 2 500 руб.</p>
+                </div>
+              </div>
+              <div class='catalog_item'>
+                <div class='catalog_item item--image'>
+                  <a href='URL.img' class='catalog-item_cell'><img src='#' alt="selfie-stick_follow-me"></a>
+                  <!--Add image URL and hidden block 'to buy'-->
+                </div>
+                <p class='catalog_item_text--bold'><a href='#'> селфи-палка «следуй за мной»</a></p>
+                <div class='catalog_item item--text'>
+                  <!--Add URL-->
+                  <p> 4 900 руб.</p>
+                </div>
+              </div>
+            </div>
+            <div class='catalog_nav'>
+                <button class='catalog_nav-btn--left' type='button'>Назад</button>
+                <button class='catalog_nav-btn--middle' type='button'>1</button>
+                <button class='catalog_nav-btn--middle' type='button'>2</button>
+                <button class='catalog_nav-btn--middle' type='button'>3</button>
+                <button class='catalog_nav-btn--right' type='button'>Вперед</button>
+            </div>
+        </div>
+      </div>
   </main>
   <footer class='footer'>
     <div class='footer_item-top'>
@@ -155,7 +174,7 @@
         <!--Add the img DEVICE after getting the skills-->
       </div>
       <div class="item-top_useractions">
-        <a href='#' class='useractions_item--singin'>Войти</a>
+        <a href='#' class='useractions_item--signin'>Войти</a>
         <!--Add the URL, popapp-->
         <a href='#' class='useractions_item--compare'>Сравнить</a>
         <!--Add the type, link-->

@@ -5,38 +5,38 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header class='header'>
-      <div class='header__logo logo'>
-        <img src='#' alt="Logo">
-      </div>
+    <header class='site_header'>
+        <div class='header_logo logo'>
+          <img src='#'>
+        </div>
         <!--Add the img logo after getting the skills-->
-        <div class='header__container'>
-          <div class='header__search'>
-            <form action='/action-page.ru' method='get'>
-            <!--There will be the correct link-->
-            <input name='search' type='text' placeholder="Поиск по сайту">
-            </form>
-          </div>
-            <ul class='header_usersactions useractions'>
-              <li class='useractions_item useractions_item--left'>
-                <a href='#' class='useractions_item useractions_link--singin'>
-                  <!--Add the type, popapp-->
-                  Войти
-                </a>
-              </li>
-              <li class='useractions_item'>
-                <a href='#' class='useractions_item useractions_link--compare'>
-                  <!--Add the type, link-->
-                  Сравнить
-                </a>
-              </li>
-              <li class='useractions_item'>
-                <a href='#' class='useractions_item useractions_link--singin'>
-                  Корзина
-                    <!--Add the the type, link-->
-                </a>
-              </li>
-            </ul>
+        <div class='header_top'>
+            <div class='header_search'>
+              <form action='/action_page.ru' method='get'>
+                <!--There will be the correct link-->
+                <input name='site_search' type='text' placeholder="Поиск по сайту">
+              </form>
+            </div>
+              <ul class='header_usersactions useractions'>
+                <li class='useractions_item useractions_item--left'>
+                  <a href='#' class='useractions_item useractions_link--signin'>
+                    <!--Add the type, popapp-->
+                    Войти
+                  </a>
+                </li>
+                <li class='useractions_item'>
+                    <a href='#' class='useractions_item useractions_link--compare'>
+                      <!--Add the type, link-->
+                      Сравнить
+                    </a>
+                </li>
+                <li class='useractions_item'>
+                  <a href='#' class='useractions_item useractions_link--signin'>
+                    Корзина
+                      <!--Add the the type, link-->
+                  </a>
+                </li>
+              </ul>
         </div>
           <nav class='header_middle'>
             <ul class='header_nav'>
@@ -66,19 +66,19 @@
     </header>
     <main class='main'>
       <!--Add after the getting skills-->
-      <div class='main_item-left '>
+      <div class='main_item-about '>
         <!--Add SVG-image after getting the skill of it-->
-        <h2 class='item-left--title'>О нас</h2>
+        <h2 class='item-about--title'>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
         <p>Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE работает со многиими транспортными компаниями:</p>
-        <ul class='item-left--delivery'>
+        <ul class='item-about--delivery'>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
         <a href='#' class='btn main_item-left-btn'>подробне о нас</a>
         </div>
-      <div class='main_item-right'>
+      <div class='main_item-location'>
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете проверить работоспособность покупку. Всякое бывает.</p>
         <map>
@@ -91,12 +91,12 @@
     <footer>
       <div class='footer_item-top'>
         <div class='footer_logo logo'>
-            <img src='#' alt='Logo'>
+            <img src='#'>
         </div>
         <!--Add the img DEVICE after getting the skills-->
         <ul class='footer_usersactions useractions'>
           <li class='useractions_item'>
-            <a href='#' class='useractions_item useractions_link--singin'>
+            <a href='#' class='useractions_item useractions_link--signin'>
               <!--Add the type, popapp-->
               Войти
             </a>
@@ -108,7 +108,7 @@
             </a>
           </li>
           <li class='useractions_item'>
-            <a href='#' class='useractions_item useractions_link--basket'>
+            <a href='#' class='useractions_item useractions_link--signin'>
               Корзина
               <!--Add the the type, link-->
             </a>
@@ -119,37 +119,31 @@
         <div class='footer_item-left'>
           <address> г. Москва, ул. Строителей, 15 </address>
         </div>
-        <div class='footer_item_nav--middle'>
+        <div class='footer_item_nav'>
           <a href='#' class='footer_item-nav--delivery'>доставка</a>
           <a href='#' class='footer_item-nav--guarantee'>гарантия</a>
           <a href='#' class='footer_item-nav--contacts'>контакты</a>
         </div>
-        <div class='footer_item-right'>
-          <p class='footer_tel'>Тел: +7(495)495-95-95</p>
-        </div>
       </div>
-        <div class='footer_item-bottom'>
+      <div class='footer_item-rigth'>
+        <p class='footer_tel'>Тел: +7(495)495-95-95</p>
+      </div>
+        <div class='footer_item_bottom'>
+          <div class='item_figure'>
           <!--Add SVG-image-->
-          <div class='socials'>
-            <!--Add URLs to all links-->
-            <a href='#' class='socials-item--facebook'>
-              <img src='#' alt='Facebook'>
-            </a>
-            <a href='#' class='socials-item--instagram'>
-              <img src='#' alt='Instagram'>
-            </a>
-            <a href='#' class='socials-item--twitter'>
-              <img src='#' alt='Twitter'>
-            </a>
           </div>
-          <div class='footer_item-right'>
-            <a href='#' class='socials-item--Logo'>
-              <img src='#' alt='Logo'>
-              <!--Add URL-->
-            </a>
+          <div class='socials'>
+            <a href='#' class='facebook'></a>
+            <a href='#' class='instagram'></a>
+            <a href='#' class='twitter'></a>
+            <!--Add URLs-->
+          </div>
+          <div class='item_logo'>
+            <a href='#' class='htmlacademy'></a>
+            <!--Add URLs-->
           </div>
         </div>
     </footer>
-  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   </body>
 </html>
