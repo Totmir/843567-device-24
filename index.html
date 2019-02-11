@@ -1,149 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
-    <header class='site_header'>
-        <div class='header_logo logo'>
-          <img src='#'>
-        </div>
-        <!--Add the img logo after getting the skills-->
-        <div class='header_top'>
-            <div class='header_search'>
-              <form action='/action_page.ru' method='get'>
-                <!--There will be the correct link-->
-                <input name='site_search' type='text' placeholder="Поиск по сайту">
-              </form>
-            </div>
-              <ul class='header_usersactions useractions'>
-                <li class='useractions_item useractions_item--left'>
-                  <a href='#' class='useractions_item useractions_link--signin'>
-                    <!--Add the type, popapp-->
-                    Войти
-                  </a>
-                </li>
-                <li class='useractions_item'>
-                    <a href='#' class='useractions_item useractions_link--compare'>
-                      <!--Add the type, link-->
-                      Сравнить
-                    </a>
-                </li>
-                <li class='useractions_item'>
-                  <a href='#' class='useractions_item useractions_link--signin'>
-                    Корзина
-                      <!--Add the the type, link-->
-                  </a>
-                </li>
-              </ul>
-        </div>
-          <nav class='header_middle'>
-            <ul class='header_nav'>
-              <li class='header_nav-item header_nav-item--catalog dropdown'>
-                <!--Add popapp-->
-                КАТАЛОГ ТОВАРОВ
-              </li>
-              <li class='header_nav-item header_nav-item--delivery'>
-                <a href='#'>
-                <!--Add the type, link-->
-                  ДОСТАВКА
-                </a>
-              </li>
-              <li class='header_nav-item header_nav-item--guarantee'>
-                <a href='#'>
-                  <!--Add the type, link-->
-                  ГАРАНТИЯ
-                </a>
-              </li>
-              <li class='header_nav-item header_nav-item--contacts'>
-                <a href='#'>
-                  КОНТАКТЫ
-                </a>
-              </li>
-            </ul>
-          </nav>
-    </header>
-    <main class='main'>
-      <!--Add after the getting skills-->
-      <div class='main_item-about '>
-        <!--Add SVG-image after getting the skill of it-->
-        <h2 class='item-about--title'>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-        <p>Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE работает со многиими транспортными компаниями:</p>
-        <ul class='item-about--delivery'>
-          <li>Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href='#' class='btn main_item-left-btn'>подробне о нас</a>
-        </div>
-      <div class='main_item-location'>
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете проверить работоспособность покупку. Всякое бывает.</p>
-        <map>
-          <area name='map'>
-          <!--Add the atributes after getting the skills-->
-        </map>
-        <a href='#' class='btn main_item-right-btn'>Напишите нам</a>
-      </div>
-    </main>
-    <footer>
-      <div class='footer_item-top'>
-        <div class='footer_logo logo'>
-            <img src='#'>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+</head>
+
+<body>
+  <header class='header'>
+    <div class='header_logo'>
+      <img src='#' alt="Logo">
+    </div>
+    <!--Add the img logo after getting the skills-->
+    <div class='top_item'>
+      <form class='top_item top_item--search' action='/action-page.ru' method='get'>
+        <!--There will be the correct link-->
+        <input name='search' type='text' placeholder="Поиск по сайту">
+      </form>
+      <ul class='top_item'>
+        <li>
+          <a href='#' class='top_item top_item--signin'>
+            <!--Add the type, popapp-->
+            Войти
+          </a>
+        </li>
+        <li>
+          <a href='#' class='top_item top_item--compare'>
+            <!--Add the type, link-->
+            Сравнить
+          </a>
+        </li>
+        <li>
+          <a href='#' class='top_item top_item--basket'>
+            Корзина
+            <!--Add the the type, link-->
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class='bottom_item'>
+      <ul class='bottom_item'>
+        <li class='bottom_item bottom_item--catalog'>
+          <!--Add popapp-->
+          КАТАЛОГ ТОВАРОВ
+        </li>
+        <li class='bottom_item bottom_item--delivery'>
+          <a href='#'>
+            <!--Add the type, link-->
+            ДОСТАВКА
+          </a>
+        </li>
+        <li class='bottom_item bottom_item--guarantee'>
+          <a href='#'>
+            <!--Add the type, link-->
+            ГАРАНТИЯ
+          </a>
+        </li>
+        <li class='bottom_item bottom_item--contacts'>
+          <a href='#'>
+            КОНТАКТЫ
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class='main'>
+    <!--Add after the getting skills-->
+    <div class='main_item-about '>
+      <!--Add SVG-image after getting the skill of it-->
+      <h2 class='item-about--title'>О нас</h2>
+      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+      <p>Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE работает со многиими транспортными
+        компаниями:</p>
+      <ul class='item-about--delivery'>
+        <li>Деловые Линии</li>
+        <li>Автотрейдинг</li>
+        <li>ЖелДорЭкспедиция</li>
+      </ul>
+      <a href='#' class='btn main_item-left-btn'>подробне о нас</a>
+    </div>
+    <div class='main_item-location'>
+      <h2>Контакты</h2>
+      <p>Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете проверить работоспособность покупку. Всякое
+        бывает.</p>
+      <map>
+        <area name='map'>
+        <!--Add the atributes after getting the skills-->
+      </map>
+      <a href='#' class='btn main_item-right-btn'>Напишите нам</a>
+    </div>
+  </main>
+  <footer class='footer'>
+    <div class='top_items'>
+      <div class='top_item_logo'>
+        <img src='#' alt='Logo'>
         <!--Add the img DEVICE after getting the skills-->
-        <ul class='footer_usersactions useractions'>
-          <li class='useractions_item'>
-            <a href='#' class='useractions_item useractions_link--signin'>
-              <!--Add the type, popapp-->
-              Войти
-            </a>
-          </li>
-          <li class='useractions_item'>
-            <a href='#' class='useractions_item useractions_link--compare'>
-              <!--Add the type, link-->
-              Сравнить
-            </a>
-          </li>
-          <li class='useractions_item'>
-            <a href='#' class='useractions_item useractions_link--signin'>
-              Корзина
-              <!--Add the the type, link-->
-            </a>
-          </li>
-        </ul>
       </div>
-      <div class='footer_item-middle'>
-        <div class='footer_item-left'>
-          <address> г. Москва, ул. Строителей, 15 </address>
-        </div>
-        <div class='footer_item_nav'>
-          <a href='#' class='footer_item-nav--delivery'>доставка</a>
-          <a href='#' class='footer_item-nav--guarantee'>гарантия</a>
-          <a href='#' class='footer_item-nav--contacts'>контакты</a>
-        </div>
+      <div class='top_item'>
+        <a href='#' class='top_item top_item--signin'>Войти</a>
+        <!--Add the URL, popapp-->
+        <a href='#' class='top_item top_item--compare'>Сравнить</a>
+        <!--Add the type, link-->
+        <a href='#' class='top_item top_item--basket'>Корзина</a>
+        <!--Add the the type, link-->
       </div>
-      <div class='footer_item-rigth'>
-        <p class='footer_tel'>Тел: +7(495)495-95-95</p>
+    </div>
+    <div class='mid_item'>
+      <address class='mid_item mid_item--location'> г. Москва, ул. Строителей, 15 </address>
+      <div class='mid_item-conditions'>
+        <a href='#' class='mid_item-conditions mid_item-conditions--delivery'>доставка</a>
+        <a href='#' class='mid_item-conditions mid_item-conditions--guarantee'>гарантия</a>
+        <a href='#' class='mid_item-conditions mid_item-conditions--contacts'>контакты</a>
       </div>
-        <div class='footer_item_bottom'>
-          <div class='item_figure'>
-          <!--Add SVG-image-->
-          </div>
-          <div class='socials'>
-            <a href='#' class='facebook'></a>
-            <a href='#' class='instagram'></a>
-            <a href='#' class='twitter'></a>
-            <!--Add URLs-->
-          </div>
-          <div class='item_logo'>
-            <a href='#' class='htmlacademy'></a>
-            <!--Add URLs-->
-          </div>
-        </div>
-    </footer>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-  </body>
+      <div class='mid_item-tel'>
+        <p>Тел: +7(495)495-95-95</p>
+      </div>
+    </div>
+    <div class='bottom_item'>
+      <div class='bottom_item-line'>
+        <!--Add SVG-image-->
+      </div>
+      <div class='bottom_item-socials'>
+        <!--Add URLs to all links-->
+        <a href='#' class='bottom_item-socials bottom_item-socials--facebook'><img src='#' alt='Facebook'></a>
+        <a href='#' class='bottom_item-socials bottom_item-socials--instagram'><img src='#' alt='Instagram'></a>
+        <a href='#' class='bottom_item-socials bottom_item-socials--twitter'><img src='#' alt='Twitter'></a>
+      </div>
+      <div class='bottom_item-logo'>
+        <a href='#'><img src='#' alt='Logo'></a>
+        <!--Add URL-->
+      </div>
+    </div>
+  </footer>
+  <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML
+      и CSS, уровень 1</a>».</p>
+</body>
+
 </html>
