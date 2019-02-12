@@ -1,15 +1,15 @@
 .checkbox {
-    background-image: url(/img/checkbox-off.svg);
+    background-image: url(img/checkbox-off.svg);
 }
 
 .checkbox:checked {
-    background-image: url(/img/checkbox-on.svg);
+    background-image: url(img/checkbox-on.svg);
 }
 
 .radio:checked {
-    background-image: url(/img/radio-on.svg);
+    background-image: url(img/radio-on.svg);
 }
 
 .radio:checked {
-    background-image: url(/img/radio-off.svg);
+    background-image: url(img/radio-off.svg);
 }
