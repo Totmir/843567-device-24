@@ -15,16 +15,16 @@
       <img src='img/logo-device.svg' alt="Logo">
     </a>
     <div class='top_item'>
-      <form class='top_item top_item--search' action='#' method='get'>
+      <form class='top_item top_item--search' name='search' id="search" action='#' method='get'>
         <!--There will be the correct link-->
         <img src="img/search.svg" alt="search">
-        <input name='search' type='text' placeholder="Поиск по сайту">
+        <input type='text' placeholder="Поиск по сайту">
       </form>
       <ul class='top_item'>
         <li>
           <a href='#' class='top_item top_item--signin'>
             <img src="img/user.svg" alt="user">
-            <!--Add the type, popapp-->
+            <!--Add the type-->
             Войти
           </a>
         </li>
@@ -102,7 +102,7 @@
         </div>
       </div>
       <div class='catalog_bottom'>
-        <form class='catalog_filter' action='#' name='filter' method='get'>
+        <form class='catalog_filter' action='#' name='catalog filter' method='get' id='catalog filter'>
           <!--Add an action-->
           <fieldset class='filter-item'>
             <legend>Стоимость:</legend>

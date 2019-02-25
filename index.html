@@ -9,17 +9,19 @@
 <body>
   <header class='header'>
     <a href='#' class='header_logo'>
+      <!--There will be the correct link-->
       <img src='img/logo-device.svg' alt="Logo">
     </a>
     <div class='top_item'>
-      <form class='top_item top_item--search' action='#' method='get'>
+      <form class='top_item top_item--search' name='search' id="search" action='#' method='get'>
         <!--There will be the correct link-->
         <img src="img/search.svg" alt="search">
-        <input name='search' type='text' placeholder="Поиск по сайту">
+        <input type='text' placeholder="Поиск по сайту">
       </form>
       <ul class='top_item'>
         <li>
           <a href='#' class='top_item top_item--signin'>
+            <!--There will be the correct link-->
             <img src="img/user.svg" alt="user" width="100" height="100">
             <!--Add the type, popapp-->
             Войти
@@ -159,6 +161,40 @@
       </div>
     </div>
   </footer>
+  <div class="visually-hidden">
+    <div class='popapp_form'>
+      <button class='popapp_btn-close'>
+        <img src="/img/modal-close.svg" atl='Закрыть'>
+      </button>
+      <form method='get' id='popapp--custumers-request' action='#' name='Заявка клиента'>
+        <!--fix the '#'-->
+        <div class='popapp_top-container'>
+          <div class="popapp_form--name">
+            <p>Ваше имя:</p>
+            <input type='text' value='Имя Фамилия'>
+          </div>
+          <div class="popapp-form--email">
+            <p>Ваш e-mail:</p>
+            <input type='text' value='email@example.com'>
+          </div>
+        </div>
+        <div class="popapp_form--custumers-message">
+          <p>Текст письма</p>
+          <input type='text' value='В свободной форме'>
+        </div>
+        <button type='submit'>отправить</button>
+      </form>
+    </div>
+    <div class="popapp_map">
+      <map>
+        <button class='popapp_btn-close'>
+          <img src="/img/modal-close.svg" atl='Закрыть'>
+        </button>
+        <area class='map'
+          href='https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abadd48032398af5b6baf9e97233ce46b99ec10a56dd0686b9ce17d331225cf82&amp;width=680&amp;height=639&amp;lang=ru_RU&amp;scroll=true'>
+      </map>
+    </div>
+  </div>
   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/htmlcss">HTML
       и CSS, уровень 1</a>».</p>
