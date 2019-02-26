@@ -13,3 +13,174 @@
 .radio:checked {
     background-image: url(img/radio-off.svg);
 }
+
+.visually-hidden {
+  display: none;
+}
+
+/* FONTS */
+
+.top_item {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 800;
+  line-height: 2;
+  color: black;
+}
+
+.bottom_item {
+  font-family: "Gilroy";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.33;
+  color: black;
+}
+
+h2 {
+  font-family: "Gilroy";
+  font-size: 47px;
+  font-weight: 800;
+  color: black;
+  line-height: 1.02;
+}
+
+h2::first-letter {
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 300;
+  color: #464646;
+}
+
+.main_item-delivery {
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+}
+
+.btn {
+  font-family: Gilroy;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: #f0c52e;
+  background-size: 260px 8px;
+  /* Не работают раземры фона */
+}
+
+.breadcrumps_item {
+  font-family: "Open Sans";
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 1.71;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter {
+  font-family: "Giltory";
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.5;
+  color: black;
+}
+
+legend {
+  font-family: "Gilroy";
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: black;
+  line-height: 1.33;
+}
+
+label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 2.86;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: black;
+}
+
+.catalog_item-title {
+  font-family: "Gilroy";
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: black;
+  line-height: 1.33;
+}
+
+.catalog_item-price {
+  font-family: "Gilroy";
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: #464646;
+  line-height: 1.33;
+}
+
+.catalog_nav-btn {
+  font-family: "Gilroy";
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+}
+
+
+.mid_item--tel {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.mid_item--location {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #ffffff;
+}
+
+.mid_item-conditions {
+  font-family: "Gilroy";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 2;
+  color: #ffffff;
+}
+
+/* BACKGROUND COLORS AND IMAGES */
+
+.header {
+  background-color: rgb(240, 197, 46, 0.5);
+  width: auto;
+}
+
+.footer {
+  background-color: #464646;
+  width: auto;
+}
+
+.catalog_filter--wrapper {
+  background-color: #ebebeb;
+}
+
+.catalog-filter_btn-submit {
+  background-color: #f0c52e;
+  width: 200px;
+  height: 8px;
+}
