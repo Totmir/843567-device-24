@@ -290,7 +290,7 @@ ul.footer_top.top-user-menu {
 
 .catalog-filter_btn-submit {
   background-color: #f0c52e;
-  width: 100;
+  width: 100%; /*doesn't work*/
   height: 8px;
 }
 
