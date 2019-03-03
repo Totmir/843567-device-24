@@ -9,181 +9,128 @@
       <link rel="stylesheet" href="http://fonts.fontstorage.com/import/opensans.css">
       <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gilroy.css">
   </head>
-
   <body>
     <header class="header">
-      <a href="#" class="header_logo">
-        <!--There will be the correct link-->
-        <img src="img/logo-device.svg" alt="Logo" />
-      </a>
-      <div class="top_item">
-        <form
-          class="top_item top_item--search"
-          id="search"
-          action="#"
-          method="get"
-        >
-          <!--There will be the correct link-->
-          <img src="img/search.svg" alt="Поиск" />
-          <input type="text" name="search" placeholder="Поиск по сайту" />
-        </form>
-        <ul class="top_item">
-          <li>
-            <a href="#" class="top_item top_item--signin">
-              <!--There will be the correct link-->
-              <img src="img/user.svg" alt="user" width="100" height="100" />
-              <!--Add the type, popapp-->
-              войти
-            </a>
-          </li>
-          <li>
-            <a href="#" class="top_item top_item--compare">
-              <img src="img/compare.svg" alt="compare" />
-              <!--Add the type, link-->
-              сравнить
-            </a>
-          </li>
-          <li>
-            <a href="#" class="top_item top_item--cart">
-              <img src="img/cart.svg" alt="cart" />
-              корзина
-              <!--Add the the type, link-->
-            </a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="header_inner">
+          <a href="#" class="header_logo"><img src="img/logo-device.svg" width="165px" height="35px" alt="Logo"/></a>
+          <div class="header_top">
+            <form class="header_top-search" id="search" action="#" method="get">
+              <!--Add the the type-->
+              <img src="img/search.svg" alt="Поиск" />
+              <input type="text" name="search" placeholder="Поиск по сайту" />
+            </form>
+            <ul class="header_top top-user-menu">
+              <li><a href="#" class="header_top top-user-menu_signin"><img src="img/user.svg" alt="user">войти</a></li>
+              <!--Add the the type-->
+              <div class="header_quarter-line-wrapper">
+                <li><a href="#" class="header_top top-user-menu_compare"><img src="img/compare.svg" alt="compare"/>сравнить</a></li>
+                <li><a href="#" class="header_top top-user_menu_cart"><img src="img/cart.svg" alt="cart"/>корзина</a></li>
+                <!--Add the the type-->
+              </div>
+            </ul>
+          </div>
+          <div class="header_bot">
+            <a href="#" class="header_bot-catalog">каталог товаров<img src="img/plus.svg" alt="plus" /></a>
+            <ul class="header_bot bot-user-menu"><!--Add the types, links-->
+              <div class="header_quarter-line-wrapper">
+                <li class="header_bot bot-menu-delivery"><a href="#">доставка</a></li>
+                <li class="header_bot bot-menu-guarantee"><a href="#">гарантия</a></li>
+              </div>
+              <li class="header_bot bot-menu-contacts"><a href="#">контакты</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <nav class="bottom_item">
-        <ul class="bottom_item">
-          <li class="bottom_item bottom_item--catalog">
-            <!--Add popapp-->
-            каталог товаров
-            <img src="img/plus.svg" alt="plus" />
-          </li>
-          <li class="bottom_item bottom_item--delivery">
-            <a href="#">
-              <!--Add the type, link-->
-              доставка
-            </a>
-          </li>
-          <li class="bottom_item bottom_item--guarantee">
-            <a href="#">
-              <!--Add the type, link-->
-              гарантия
-            </a>
-          </li>
-          <li class="bottom_item bottom_item--contacts">
-            <a href="#">
-              контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
-      <!--Add after the getting skills-->
-      <div class="main_item-about ">
-        <!--Add SVG-image after getting the skill of it-->
-        <h2>о нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика, который есть в
-          каждом из нас
-        </p>
-        <p>
-          Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE
-          работает со многиими транспортными компаниями:
-        </p>
-        <ul class="main_item-delivery">
-          <li >Деловые Линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="btn main_item-left-btn">подробне о нас</a>
-      </div>
-      <div class="main_item-location">
-        <h2>Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете
-          проверить работоспособность покупку. Всякое бывает.
-        </p>
-        <map name="map">
-          <img src="/img/map-screenshot.png" alt="Карта" />
-        </map>
-        <a href="#" class="btn main_item-right-btn">Напишите нам</a>
+      <div class="container">
+        <!--Add after the getting skills-->
+        <div class="main_item">
+          <!--Add SVG-image after getting the skill of it-->
+          <h2 class="main_item-title">о нас</h2>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+            каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в семый отдаленный точки России! DEVICE
+            работает со многиими транспортными компаниями:
+          </p>
+          <ul class="main_item-delivery">
+            <li>Деловые Линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="btn main_item-btn">подробне о нас</a>
+        </div>
+        <div class="main_item">
+          <h2 class="main_item-title">Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете
+            проверить работоспособность покупку. Всякое бывает.
+          </p>
+          <a href="#" class="main_item-map">
+            <!--add link-->
+            <img src="/img/map-screenshot.png" width="560" height="220" alt="Карта" />
+          </a>
+          <a href="#" class="btn main_item-btn">Напишите нам</a>
+        </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="top_items">
-        <div class="top_item_logo">
-          <img src="img/logo-device.svg" alt="Logo" />
-          <!--Add the img DEVICE after getting the skills-->
-        </div>
-        <ul class="top_item">
-          <li>
-            <a href="#" class="top_item top_item--signin">
-              <img src="img/user.svg" alt="user" width="100" height="100" />
-              <!--Add the type, popapp-->
-              Войти
-            </a>
-          </li>
-          <li>
-            <a href="#" class="top_item top_item--compare">
-              <img src="img/compare.svg" alt="compare" />
-              <!--Add the type, link-->
-              Сравнить
-            </a>
-          </li>
-          <li>
-            <a href="#" class="top_item top_item--cart">
-              <img src="img/cart.svg" alt="cart" />
-              Корзина
-              <!--Add the the type, link-->
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="mid_item">
-        <address class="mid_item mid_item--location">
-          г. Москва, ул. Строителей, 15
-        </address>
-        <div class="mid_item-conditions">
-          <a href="#" class="mid_item-conditions mid_item-conditions--delivery"
-            >доставка</a
-          >
-          <a href="#" class="mid_item-conditions mid_item-conditions--guarantee"
-            >гарантия</a
-          >
-          <a href="#" class="mid_item-conditions mid_item-conditions--contacts"
-            >контакты</a
-          >
-        </div>
-        <div class="mid_item-tel">
-          <p>Тел: +7(495)495-95-95</p>
-        </div>
-      </div>
-      <div class="bottom_item">
-        <div class="bottom_item-line">
-          <!--Add SVG-image-->
-        </div>
-        <div class="bottom_item-socials">
-          <!--Add URLs to all links-->
-          <a href="#" class="bottom_item-socials bottom_item-socials--facebook">
-            <img src="img/fb.svg" alt="Facebook" />
-          </a>
-          <a
-            href="#"
-            class="bottom_item-socials bottom_item-socials--instagram"
-          >
-            <img src="img/instagram.svg" alt="Instagram" />
-          </a>
-          <a href="#" class="bottom_item-socials bottom_item-socials--twitter">
-            <img src="img/twitter.svg" alt="Twitter" />
-          </a>
-        </div>
-        <div class="bottom_item-logo">
-          <a href="#">
-            <img src="img/logo-html.svg" alt="Logo" />
-          </a>
-          <!--Add URL-->
+        <div class="container">
+          <div class="footer_inner">
+            <div class="footer_top">
+              <img src="img/logo-device.svg" width="165px" height="35px" class="footer_top-logo" alt="Logo DEVICE" />
+              <ul class="footer_top top-user-menu">
+                <li>
+                  <a href="#" class="footer_top top-user-menu_signin">
+                    <img src="img/user.svg" alt="user">
+                    <!--Add the type, popapp-->
+                    Войти
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer_top top-user-menu_compare">
+                    <img src="img/compare.svg" alt="compare" />
+                    <!--Add the type, link-->
+                    Сравнить
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="footer_top top-user-menu_cart">
+                    <img src="img/cart.svg" alt="cart" />
+                    Корзина
+                    <!--Add the the type, link-->
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_mid">
+              <p class="footer_mid mid-location">г. Москва, ул. Строителей, 15</p>
+              <div class="footer_mid footer_mid-menu">
+                <a href="#" class="footer_mid-menu mid-menu-delivery">доставка</a>
+                <a href="#" class="footer_mid-menu mid-menu-guarantee">гарантия</a>
+                <a href="#" class="footer_mid-menu mid-menu-contacts">контакты</a>
+              </div>
+              <div class="footer_mid mid-phone">
+                <p class="footer_mid mid-location">Тел: +7 (495) 495-95-95</p>
+              </div>
+            </div>
+            <div class="footer_bot">
+              <div class="footer_bot-line">
+              </div>
+              <div class="footer_bot-socials">
+              <!--Add URLs to all links-->
+                <a href="#" class="footer_bot-socials-facebook"><img src="img/fb.svg" alt="Facebook" /></a>
+                <a href="#" class="footer_bot-socials-instagram"><img src="img/instagram.svg" alt="Instagram" /></a>
+                <a href="#" class="footer_bot-socials-twitter"><img src="img/twitter.svg" alt="Twitter"/></a>
+              </div>
+              <a href="#" class="footer_bot-logo"><img src="img/logo-html.svg" alt="Logo" /></a>
+              <!--Add URL-->
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -227,8 +174,7 @@
     <p>
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
         href="https://htmlacademy.ru/intensive/htmlcss"
-        >HTML и CSS, уровень 1</a
-      >».
+        >HTML и CSS, уровень 1</a>».
     </p>
   </body>
 </html>
