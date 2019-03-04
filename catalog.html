@@ -25,20 +25,20 @@
             <ul class="header_top top-user-menu">
               <li><a href="#" class="header_top top-user-menu_signin"><img src="img/user.svg" width="12" height="12" alt="user">войти</a></li>
               <!--Add the the type-->
-              <div class="header_quarter-line-wrapper">
+              <ul class="header_quarter-line-wrapper">
                 <li><a href="#" class="header_top top-user-menu_compare"><img src="img/compare.svg" width="12" height="12" alt="compare"/>сравнить</a></li>
                 <li><a href="#" class="header_top top-user_menu_cart"><img src="img/cart.svg" width="12" height="12" alt="cart"/>корзина</a></li>
                 <!--Add the the type-->
-              </div>
+              </ul>
             </ul>
           </div>
           <div class="header_bot">
             <a href="#" class="header_bot-catalog">каталог товаров<img src="img/plus.svg" alt="plus" /></a>
             <ul class="header_bot bot-user-menu"><!--Add the types, links-->
-              <div class="header_quarter-line-wrapper">
+              <ul class="header_quarter-line-wrapper">
                 <li class="header_bot bot-menu-delivery"><a href="#">доставка</a></li>
                 <li class="header_bot bot-menu-guarantee"><a href="#">гарантия</a></li>
-              </div>
+              </ul>
               <li class="header_bot bot-menu-contacts"><a href="#">контакты</a></li>
             </ul>
           </div>
@@ -57,9 +57,8 @@
       </div>
     </div>
     <div class="catalog_inner">
-      <div class="container main_inner">
-        <div class="catalog">
-          <div class="main_catalog-table-header">
+      <div class="container catalog">
+          <div class="catalog-top">
             <p class="filter catalog_sidebar-inner">фильтр:</p>
             <div>
               <!--Horizontal sorf-->
@@ -70,85 +69,85 @@
               <!--по популярности-->
             </div>
           </div>
-          <div class="catalog_sidebar">
-            <div class="catalog_sidebar-container">
-              <form class="catalog_filter" action="#" name="catalog filter" method="get" id="catalog_filter">
-                <!--Add an action-->
-                <div class="filter-item-line"></div>
-                <fieldset class="filter-item">
-                  <legend>стоимость:</legend>
-                  <input name="cost" type="range" min=0 max=20000 step=1>
-                </fieldset>
-                <div class="filter-item-line"></div>
-                <fieldset class="filter-item">
-                  <legend>цвет</legend>
-                  <label><input type="checkbox" name="color" value="Черный" checked><span>Черный</span></label>
-                  <label><input type="checkbox" name="color" value="Белый"><span>Белый</span></label>
-                  <label><input type="checkbox" name="color" value="Синий" checked><span>Синий</span></label>
-                  <label><input type="checkbox" name="color" value="Красный" checked><span>Красный</span></label>
-                  <label><input type="checkbox" name="color" value="Розовый"><span>Розовый</span></label>
-                </fieldset>
-                <div class="filter-item-line"></div>
-                <fieldset class="filter-item">
-                  <legend>bluetooth</legend>
-                  <label><input type="radio" name="Bluetooth" checked><span>Есть</span></label>
-                  <label><input type="radio" name="Bluetooth"><span>Нет</span></label>
-                </fieldset>
-                <fieldset class='catalog-filter_btn btn'>
-                  <input class="" type="submit" value="Показать">
-                </fieldset>
-              </form>
-            </div>
-          </div>
-          <div class="catalog_content">
-            <div class="catalog_content-container">
-              <div class="catalog_content-item">
-                <div class="catalog_content-item-image">
-                  <a href="URL.img"><img src="/img/selfie-stick_amateur.png" width="360" height="380" alt="selfie-stick_amateur"></a>
-                </div>
-                <div class="catalog_content-item-text">
-                  <a class="catalog_content-item-title" href="#"> Любительская селфи-палка</a>
-                  <!--Add URL-->
-                  <p class="catalog_content-item-price"> 500 руб.</p>
-                </div>
-              </div>
-              <div class="catalog_content-item">
-                <div class="catalog_content-item-image">
-                  <a href="URL.img"><img src="/img/selfie-stick_prof.png" width="360" height="380" alt="selfie-stick_prof"></a>
-                </div>
-                <div class="catalog_content-item-text">
-                  <a class="catalog_content-item-title" href="#"> профессиональная селфи-палки</a>
-                  <!--Add URL-->
-                  <p class="catalog_content-item-price"> 500 руб.</p>
-                </div>
-              </div>
-              <div class="catalog_content-item">
-                <div class="catalog_content-item-image">
-                  <a href="URL.img"><img src="/img/selfie-stick_unsinkable.png" width="360" height="380" alt="selfie-stick_unsinkable"></a>
-                </div>
-                <div class="catalog_content-item-text">
-                  <a class="catalog_content-item-title" href="#"> непотопляемая селфи-палка</a>
-                  <!--Add URL-->
-                  <p class="catalog_content-item-price"> 2 500 руб.</p>
-                </div>
-              </div>
-              <div class="catalog_content-item">
-                <div class="catalog_content-item-image">
-                  <a href="URL.img"><img src="/img/selfie-stick_follow-me.png" width="360" height="380" alt="selfie-stick_follow-me"></a>
-                </div>
-                <div class="catalog_content-item-text">
-                  <a class="catalog_content-item-title" href="#"> селфи-палка «следуй за мной»</a>
-                  <!--Add URL-->
-                  <p class="catalog_content-item-price"> 4 900 руб.</p>
-                </div>
+          <div class="catalog_main">
+            <div class="catalog_sidebar">
+              <div class="catalog_sidebar-container">
+                <form class="catalog_filter" action="#" name="catalog filter" method="get" id="catalog_filter">
+                  <!--Add an action-->
+                  <div class="filter-item-line"></div>
+                  <fieldset class="filter-item">
+                    <legend>стоимость:</legend>
+                    <input name="cost" type="range" min=0 max=20000 step=1>
+                  </fieldset>
+                  <div class="filter-item-line"></div>
+                  <fieldset class="filter-item">
+                    <legend>цвет</legend>
+                    <label><input type="checkbox" name="color" value="Черный" checked><span>Черный</span></label>
+                    <label><input type="checkbox" name="color" value="Белый"><span>Белый</span></label>
+                    <label><input type="checkbox" name="color" value="Синий" checked><span>Синий</span></label>
+                    <label><input type="checkbox" name="color" value="Красный" checked><span>Красный</span></label>
+                    <label><input type="checkbox" name="color" value="Розовый"><span>Розовый</span></label>
+                  </fieldset>
+                  <div class="filter-item-line"></div>
+                  <fieldset class="filter-item">
+                    <legend>bluetooth</legend>
+                    <label><input type="radio" name="Bluetooth" checked><span>Есть</span></label>
+                    <label><input type="radio" name="Bluetooth"><span>Нет</span></label>
+                  </fieldset>
+                    <button class="catalog-filter_btn btn" type="submit" value="Подтвердить">Показать</button>
+                </form>
               </div>
             </div>
-            <div class="catalog_content-nav">
-              <button class="catalog_content-nav-btn" type="button">назад</button>
-              <button class="catalog_content-nav-btn" type="button">1</button>
-              <button class="catalog_content-nav-btn" type="button">2</button>
-              <button class="catalog_content-nav-btn" type="button">3</button>
-              <button class="catalog_content-nav-btn" type="button">вперед</button>
+            <div class="catalog_content">
+              <div class="catalog_content-container">
+                <div class="catalog_content-item">
+                  <div class="catalog_content-item-image">
+                    <a href="URL.img"><img src="/img/selfie-stick_amateur.png" width="360" height="380" alt="selfie-stick_amateur"></a>
+                  </div>
+                  <div class="catalog_content-item-text">
+                    <a class="catalog_content-item-title" href="#"> Любительская селфи-палка</a>
+                    <!--Add URL-->
+                    <p class="catalog_content-item-price"> 500 руб.</p>
+                  </div>
+                </div>
+                <div class="catalog_content-item">
+                  <div class="catalog_content-item-image">
+                    <a href="URL.img"><img src="/img/selfie-stick_prof.png" width="360" height="380" alt="selfie-stick_prof"></a>
+                  </div>
+                  <div class="catalog_content-item-text">
+                    <a class="catalog_content-item-title" href="#"> профессиональная селфи-палки</a>
+                    <!--Add URL-->
+                    <p class="catalog_content-item-price"> 500 руб.</p>
+                  </div>
+                </div>
+                <div class="catalog_content-item">
+                  <div class="catalog_content-item-image">
+                    <a href="URL.img"><img src="/img/selfie-stick_unsinkable.png" width="360" height="380" alt="selfie-stick_unsinkable"></a>
+                  </div>
+                  <div class="catalog_content-item-text">
+                    <a class="catalog_content-item-title" href="#"> непотопляемая селфи-палка</a>
+                    <!--Add URL-->
+                    <p class="catalog_content-item-price"> 2 500 руб.</p>
+                  </div>
+                </div>
+                <div class="catalog_content-item">
+                  <div class="catalog_content-item-image">
+                    <a href="URL.img"><img src="/img/selfie-stick_follow-me.png" width="360" height="380" alt="selfie-stick_follow-me"></a>
+                  </div>
+                  <div class="catalog_content-item-text">
+                    <a class="catalog_content-item-title" href="#"> селфи-палка «следуй за мной»</a>
+                    <!--Add URL-->
+                    <p class="catalog_content-item-price"> 4 900 руб.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog_content-nav">
+                <button class="catalog_content-nav-btn" type="button">назад</button>
+                <button class="catalog_content-nav-btn" type="button">1</button>
+                <button class="catalog_content-nav-btn" type="button">2</button>
+                <button class="catalog_content-nav-btn" type="button">3</button>
+                <button class="catalog_content-nav-btn" type="button">вперед</button>
+              </div>
             </div>
           </div>
         </div>

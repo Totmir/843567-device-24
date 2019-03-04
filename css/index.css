@@ -71,7 +71,7 @@ ul.header_top.top-user-menu {
   justify-content: space-between;
 }
 
-.header_quarter-line-wrapper {
+li.header_quarter-line-wrapper {
   width: 40%;
   display: flex;
   justify-content: space-between;
@@ -143,7 +143,10 @@ p {
   text-transform: uppercase;
   z-index: 1;
   display: inline-block;
-  align-self: flex-start;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
 }
 
 .btn::after {
@@ -321,7 +324,7 @@ ul.footer_top.top-user-menu {
 }
 
 .catalog_inner {
-  padding-left: 60px;
+  background: linear-gradient(to right, #ebebeb 36%, white 30%)
 }
 
 .catalog {
@@ -329,8 +332,12 @@ ul.footer_top.top-user-menu {
   flex-wrap: wrap;
 }
 
-.main_catalog-table-header {
+.main_catalog-top {
   width: 100%;
+}
+
+.catalog_main {
+  display: flex;
 }
 
 .catalog_sidebar {
