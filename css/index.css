@@ -68,11 +68,14 @@ li a img {
 ul.header_top.top-user-menu {
   width: 50%;
   display: flex;
-  justify-content: space-between;
+}
+
+.header_top .top-user_menu_cart {
+  margin-left: 40px;
 }
 
 li.header_quarter-line-wrapper {
-  width: 40%;
+  width: 45%;
   display: flex;
   justify-content: space-between;
 }
@@ -90,16 +93,13 @@ li.header_quarter-line-wrapper {
   justify-content: space-between;
 }
 
-ul.header_bot.bot-user-menu {
+.bot-user-menu {
+  display: flex;
+  justify-content: space-between;
   width: 50%;
-  display: flex;
-  justify-content: space-between;
 }
-
-.header_quarter-line-wrapper {
-  width: 45%;
-  display: flex;
-  justify-content: space-between;
+.bot-menu-delivery {
+  width: 50%;
 }
 
 h2 {
@@ -324,7 +324,7 @@ ul.footer_top.top-user-menu {
 }
 
 .catalog_inner {
-  background: linear-gradient(to right, #ebebeb 36%, white 30%)
+  background: linear-gradient(to right, #ebebeb 33%, white 33%)
 }
 
 .catalog {
