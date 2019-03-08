@@ -75,6 +75,45 @@
           <a href="#" class="btn main_item-btn">Напишите нам</a>
         </div>
       </div>
+      <div class="visually-hidden">
+        <div class="popup_form">
+          <button class="popup_btn-close">
+            <img src="/img/modal-close.svg" alt="Закрыть" />
+          </button>
+          <form
+            method="get"
+            id="popup--custumers-request"
+            action="#"
+          >
+            <!--fix the "#"-->
+            <fieldset class="popup_top-container">
+              <fieldset class="popup_form--name">
+                <label>Ваше имя:</label>
+                <input name="Имя, Фамилия" type="text" value="Имя Фамилия" />
+              </fieldset>
+              <fieldset class="popup-form--email">
+                <label>Ваш e-mail:</label>
+                <input name="Адрес эл. почты" type="text" value="email@example.com" />
+              </fieldset>
+            </fieldset>
+            <fieldset class="popup_form--custumers-message">
+              <label>Текст письма</label>
+              <input name="Комментарий к заявке" type="text" value="В свободной форме" />
+            </fieldset>
+            <button type="submit">отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="visually-hidden">
+        <div class="popup_map">
+          <map name="map">
+            <button class="popup_btn-close">
+              <img src="/img/modal-close.svg" width="55px" height="55px" alt="Закрыть" />
+            </button>
+            <img src="/img/map-screenshot.png" width="960px" height="560px" alt="Карта" />
+          </map>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -131,43 +170,6 @@
         </div>
       </div>
     </footer>
-    <div class="visually-hidden">
-      <div class="popapp_form">
-        <button class="popapp_btn-close">
-          <img src="/img/modal-close.svg" alt="Закрыть" />
-        </button>
-        <form
-          method="get"
-          id="popapp--custumers-request"
-          action="#"
-        >
-          <!--fix the "#"-->
-          <fieldset class="popapp_top-container">
-            <fieldset class="popapp_form--name">
-              <label>Ваше имя:</label>
-              <input name="Имя, Фамилия" type="text" value="Имя Фамилия" />
-            </fieldset>
-            <fieldset class="popapp-form--email">
-              <label>Ваш e-mail:</label>
-              <input name="Адрес эл. почты" type="text" value="email@example.com" />
-            </fieldset>
-          </fieldset>
-          <fieldset class="popapp_form--custumers-message">
-            <label>Текст письма</label>
-            <input name="Комментарий к заявке" type="text" value="В свободной форме" />
-          </fieldset>
-          <button type="submit">отправить</button>
-        </form>
-      </div>
-      <div class="popapp_map">
-        <map name="map">
-          <button class="popapp_btn-close">
-            <img src="/img/modal-close.svg" alt="Закрыть" />
-          </button>
-          <img src="/img/map-screenshot.png" alt="Карта" />
-        </map>
-      </div>
-    </div>
     <p>
       Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
         href="https://htmlacademy.ru/intensive/htmlcss"
