@@ -53,7 +53,7 @@ body {
 .header_inner {
   padding-left: 60px;
   padding-right: 60px;
-  background-color: rgb(240, 197, 46, 0.5);
+  background-color: #f7e296;
 }
 
 .header_logo img {
@@ -83,7 +83,7 @@ li a img {
 }
 
 ul.header_top.top-user-menu {
-  width: 50%;
+  width: 500px;
   display: flex;
 }
 
@@ -98,6 +98,30 @@ li.header_quarter-line-wrapper {
 }
 
 .header_bot {
+
+}
+
+.header_menu {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.header_menu-item {
+  margin-left: 38px;
+}
+
+.header_menu-item--contacts {
+  margin-left: 114px;
+}
+
+.header_menu-item--catalog {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header_menu-item > a {
   font-family: "Gilroy";
   font-size: 18px;
   text-transform: uppercase;
@@ -105,10 +129,37 @@ li.header_quarter-line-wrapper {
   line-height: 1.33;
   letter-spacing: 1.6px;
   color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
+
+.dropdown_menu {
+  position: absolute;
+  left: -60px;
+  right: -60px;
+  top: 100%;
+  background-color: #f7e296;
+  padding-left: 60px;
+  z-index: 1;
+  display: none;
+  padding-right: 460px;
+}
+
+.dropdown:hover .dropdown_menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdown_menu-item {
+  width: 200px;
+}
+
+.dropdown_menu-item:nth-child(3n+1) {
+  width: 240px;
+}
+
+.dropdown_menu-item:last-child {
+  width: 240px;
+}
+
 
 .header_bot div {
   display: none;
@@ -518,6 +569,7 @@ fieldset {
 }
 
 .popup_form {
+  display: none;
   position: absolute;
   width: 960px;
   height: 560px;
@@ -544,13 +596,13 @@ fieldset {
 }
 
 .popup_btn-close {
+  cursor: pointer;
+  background: none;
   position: absolute;
   z-index: 1;
   border: none;
   border-radius: 50%;
   opacity: 0.5;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 20px;
+  right: 22px;
+  top: 22px;
 }

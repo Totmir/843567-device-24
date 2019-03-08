@@ -31,11 +31,21 @@
             </ul>
           </div>
           <div class="header_bot">
-            <a href="#" class="header_bot-catalog">каталог товаров<img src="img/plus.svg" alt="plus" /></a>
-            <ul class="bot-user-menu"><!--Add the types, links-->
-                <li><a  class="bot-menu-delivery" href="#">доставка</a></li>
-                <li><a  class="bot-menu-guarantee" href="#">гарантия</a></li>
-              <li><a  class="bot-menu-contacts" href="#">контакты</a></li>
+            <ul class="header_menu">
+              <li class="header_menu-item header_menu-item--catalog dropdown">
+                <a href="#">каталог товаров<img src="img/plus.svg" alt="plus" /></a>
+                <ul class="dropdown_menu">
+                  <li class="dropdown_menu-item"><a href="#">Виртуальная реальность</a></li>
+                  <li class="dropdown_menu-item"><a href="#">Фитнес-браслеты</a></li>
+                  <li class="dropdown_menu-item"><a href="#">Квадрокоптеры</a></li>
+                  <li class="dropdown_menu-item"><a href="#">Моноподы для селфи</a></li>
+                  <li class="dropdown_menu-item"><a href="#">Умные часы</a></li>
+                  <li class="dropdown_menu-item"><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li class="header_menu-item"><a href="#">доставка</a></li>
+              <li class="header_menu-item"><a href="#">гарантия</a></li>
+              <li class="header_menu-item header_menu-item--contacts"><a href="#">контакты</a></li>
             </ul>
           </div>
         </div>
@@ -75,7 +85,6 @@
           <a href="#" class="btn main_item-btn">Напишите нам</a>
         </div>
       </div>
-      <div class="visually-hidden">
         <div class="popup_form">
           <button class="popup_btn-close">
             <img src="/img/modal-close.svg" alt="Закрыть" />
@@ -86,7 +95,7 @@
             action="#"
           >
             <!--fix the "#"-->
-            <fieldset class="popup_top-container">
+            <div class="popup_top-container">
               <fieldset class="popup_form--name">
                 <label>Ваше имя:</label>
                 <input name="Имя, Фамилия" type="text" value="Имя Фамилия" />
@@ -95,7 +104,7 @@
                 <label>Ваш e-mail:</label>
                 <input name="Адрес эл. почты" type="text" value="email@example.com" />
               </fieldset>
-            </fieldset>
+            </div>
             <fieldset class="popup_form--custumers-message">
               <label>Текст письма</label>
               <input name="Комментарий к заявке" type="text" value="В свободной форме" />
@@ -103,8 +112,6 @@
             <button type="submit">отправить</button>
           </form>
         </div>
-      </div>
-      <div class="visually-hidden">
         <div class="popup_map">
           <map name="map">
             <button class="popup_btn-close">
@@ -113,7 +120,6 @@
             <img src="/img/map-screenshot.png" width="960px" height="560px" alt="Карта" />
           </map>
         </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="container">
