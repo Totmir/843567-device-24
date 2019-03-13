@@ -10,54 +10,42 @@
   <link rel="stylesheet" href="http://fonts.fontstorage.com/import/opensans.css">
   <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gilroy.css">
 </head>
-
 <body>
   <header class="header">
-      <div class="container">
-        <div class="header_inner">
-          <a href="#" class="header_logo"><img src="img/logo-device.svg" width="165" height="35" alt="Logo"/></a>
-          <div class="header_top">
-            <form class="header_top-search" id="search" action="#" method="get">
-              <!--Add the the type-->
-              <img src="img/search.svg" alt="Поиск" />
-              <input type="text" name="search" placeholder="Поиск по сайту" />
-            </form>
-            <ul class="header_top top-user-menu">
-              <li><a href="#" class="header_top top-user-menu_signin"><img src="img/user.svg" width="12" height="12" alt="user">войти</a></li>
-              <!--Add the the type-->
-              <li class="header_quarter-line-wrapper">
-                <li><a href="#" class="header_top top-user-menu_compare"><img src="img/compare.svg" width="12" height="12" alt="compare"/>сравнить</a></li>
-                <li><a href="#" class="header_top top-user_menu_cart"><img src="img/cart.svg" width="12" height="12" alt="cart"/>корзина</a></li>
-                <!--Add the the type-->
-              </li>
-            </ul>
-          </div>
-          <div class="header_bot">
-            <a href="#" class="header_bot-catalog">каталог товаров<img src="img/plus.svg" alt="plus" /></a>
-            <div class="header_dropdown-container">
-              <ul class="header_dropdown">
-                <li>
-                  <li><a href="#">Виртуальная реальность</a></li>
-                  <li><a href="#">Фитнес-браслеты</a></li>
-                  <li><a href="#">Квадрокоптеры</a></li>
-                </li>
-                <li>
-                  <li><a href="#">Моноподы для селфи</a></li>
-                  <li><a href="#">Умные часы</a></li>
-                </li>
-                <li>
-                  <a href="#">Экшн-камеры</a>
-                </li>
+    <div class="container">
+      <div class="header_inner">
+        <a href="#" class="header_logo"><img src="img/logo-device.svg" width="165" height="35" alt="Logo"/></a>
+        <div class="header_top">
+          <form class="header_top-search" id="search" action="#" method="get">
+            <img src="img/search.svg" alt="Поиск" />
+            <input type="text" name="search" placeholder="Поиск по сайту" />
+          </form>
+          <ul class="user-menu">
+            <li class="user-menu_item user-menu_item--signin"><a href="#"><img src="img/user.svg" width="12" height="12" alt="user">Войти</a></li>
+            <li class="user-menu_item user-menu_item--compare"><a href="#"><img src="img/compare.svg" width="12" height="12" alt="compare"/>Сравнить</a></li>
+            <li class="user-menu_item user-menu_item--cart"><a href="#"><img src="img/cart.svg" width="12" height="12" alt="cart"/>Корзина</a></li>
+          </ul>
+        </div>
+        <div class="header_bot">
+          <ul class="header_menu">
+            <li class="header_menu-item header_menu-item--catalog dropdown">
+              <a href="#">каталог товаров<img src="img/plus.svg" alt="plus" /></a>
+              <ul class="dropdown_menu">
+                <li class="dropdown_menu-item"><a href="#">Виртуальная реальность</a></li>
+                <li class="dropdown_menu-item"><a href="#">Фитнес-браслеты</a></li>
+                <li class="dropdown_menu-item"><a href="#">Квадрокоптеры</a></li>
+                <li class="dropdown_menu-item"><a href="#">Моноподы для селфи</a></li>
+                <li class="dropdown_menu-item"><a href="#">Умные часы</a></li>
+                <li class="dropdown_menu-item"><a href="#">Экшн-камеры</a></li>
               </ul>
-            </div>
-            <ul class="bot-user-menu"><!--Add the types, links-->
-              <li class="header_item"><a  class="bot-menu-delivery" href="#">доставка</a></li>
-              <li class="header_item"><a  class="bot-menu-guarantee" href="#">гарантия</a></li>
-              <li class="header_item-right"><a  class="bot-menu-contacts" href="#">контакты</a></li>
-            </ul>
-          </div>
+            </li>
+            <li class="header_menu-item"><a href="#">доставка</a></li>
+            <li class="header_menu-item"><a href="#">гарантия</a></li>
+            <li class="header_menu-item header_menu-item--contacts"><a href="#">контакты</a></li>
+          </ul>
         </div>
       </div>
+    </div>
   </header>
   <main>
     <div class="container">
@@ -114,63 +102,68 @@
             </div>
             <div class="catalog_content">
               <div class="catalog_content-container">
-                <div class="catalog_content-item">
+                <div class="catalog_content-item popup">
                   <div class="catalog_content-item-image">
                     <a href="URL.img"><img src="/img/selfie-stick_amateur.png" width="360" height="380" alt="selfie-stick_amateur"></a>
                   </div>
                   <div class="catalog_content-item-text">
                     <a class="catalog_content-item-title" href="#"> Любительская селфи-палка</a>
-                    <!--Add URL-->
                     <p class="catalog_content-item-price"> 500 руб.</p>
                   </div>
+                    <ul class="popup-inner" >
+                      <li class="popup-item"><a href="#" class="btn">в корзину</a></li>
+                      <li class="popup-item"><a href="#" class="">Добавить к сравнению</a></li>
+                    </ul>
                 </div>
-                <div class="catalog_content-item">
+                <div class="catalog_content-item popup">
                   <div class="catalog_content-item-image">
                     <a href="URL.img"><img src="/img/selfie-stick_prof.png" width="360" height="380" alt="selfie-stick_prof"></a>
                   </div>
                   <div class="catalog_content-item-text">
                     <a class="catalog_content-item-title" href="#"> профессиональная селфи-палки</a>
-                    <!--Add URL-->
                     <p class="catalog_content-item-price"> 500 руб.</p>
                   </div>
+                  <ul class="popup-inner" >
+                      <li class="popup-item"><a href="#" class="btn">в корзину</a></li>
+                      <li class="popup-item"><a href="#" class="">Добавить к сравнению</a></li>
+                  </ul>
                 </div>
-                <div class="catalog_content-item">
+                <div class="catalog_content-item popup">
                   <div class="catalog_content-item-image">
                     <a href="URL.img"><img src="/img/selfie-stick_unsinkable.png" width="360" height="380" alt="selfie-stick_unsinkable"></a>
                   </div>
                   <div class="catalog_content-item-text">
                     <a class="catalog_content-item-title" href="#"> непотопляемая селфи-палка</a>
-                    <!--Add URL-->
                     <p class="catalog_content-item-price"> 2 500 руб.</p>
                   </div>
+                  <ul class="popup-inner" >
+                      <li class="popup-item"><a href="#" class="btn">в корзину</a></li>
+                      <li class="popup-item"><a href="#" class="">Добавить к сравнению</a></li>
+                  </ul>
                 </div>
-                <div class="catalog_content-item">
+                <div class="catalog_content-item popup">
                   <div class="catalog_content-item-image">
                     <a href="URL.img"><img src="/img/selfie-stick_follow-me.png" width="360" height="380" alt="selfie-stick_follow-me"></a>
                   </div>
                   <div class="catalog_content-item-text">
                     <a class="catalog_content-item-title" href="#"> селфи-палка «следуй за мной»</a>
-                    <!--Add URL-->
                     <p class="catalog_content-item-price"> 4 900 руб.</p>
                   </div>
+                  <ul class="popup-inner" >
+                      <li class="popup-item"><a href="#" class="btn">в корзину</a></li>
+                      <li class="popup-item"><a href="#" class="">Добавить к сравнению</a></li>
+                  </ul>
                 </div>
               </div>
               <div class="catalog_content-nav">
                 <button class="catalog_content-nav-btn" type="button">назад</button>
-                <button class="catalog_content-nav-btn" type="button">1</button>
-                <button class="catalog_content-nav-btn" type="button">2</button>
-                <button class="catalog_content-nav-btn" type="button">3</button>
+                <div>
+                  <button class="catalog_content-nav-btn" type="button">1</button>
+                  <button class="catalog_content-nav-btn catalog_content-nav-btn--unselected" type="button">2</button>
+                  <button class="catalog_content-nav-btn catalog_content-nav-btn--unselected" type="button">3</button>
+                </div>
                 <button class="catalog_content-nav-btn" type="button">вперед</button>
               </div>
-              <div class="hidden-item">
-                <ul>
-                  <li>
-                    <a href="#" class="btn content-item-button">в корзину</a>
-                  </li>
-                  <li>
-                    <a href="#" class="content-item-button">добавить к сравнению</a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -187,14 +180,12 @@
             <li>
               <a href="#" class="footer_top top-user-menu_signin">
                 <img src="img/user.svg" alt="user">
-                <!--Add the type, popapp-->
                 Войти
               </a>
             </li>
             <li>
               <a href="#" class="footer_top top-user-menu_compare">
                 <img src="img/compare.svg" alt="compare" />
-                <!--Add the type, link-->
                 Сравнить
               </a>
             </li>
@@ -202,7 +193,6 @@
               <a href="#" class="footer_top top-user-menu_cart">
                 <img src="img/cart.svg" alt="cart" />
                 Корзина
-                <!--Add the the type, link-->
               </a>
             </li>
           </ul>

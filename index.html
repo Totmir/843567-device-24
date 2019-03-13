@@ -6,8 +6,8 @@
       <title>index</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
-      <link rel="stylesheet" href="http://fonts.fontstorage.com/import/opensans.css">
-      <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gilroy.css">
+<!--       <link rel="stylesheet" href="http://fonts.fontstorage.com/import/opensans.css">
+      <link rel="stylesheet" href="http://fonts.fontstorage.com/import/gilroy.css"> -->
   </head>
   <body>
     <header class="header">
@@ -16,18 +16,13 @@
           <a href="#" class="header_logo"><img src="img/logo-device.svg" width="165" height="35" alt="Logo"/></a>
           <div class="header_top">
             <form class="header_top-search" id="search" action="#" method="get">
-              <!--Add the the type-->
               <img src="img/search.svg" alt="Поиск" />
               <input type="text" name="search" placeholder="Поиск по сайту" />
             </form>
-            <ul class="header_top top-user-menu">
-              <li><a href="#" class="header_top top-user-menu_signin"><img src="img/user.svg" width="12" height="12" alt="user">войти</a></li>
-              <!--Add the the type-->
-              <li class="header_quarter-line-wrapper">
-                <li><a href="#" class="header_top top-user-menu_compare"><img src="img/compare.svg" width="12" height="12" alt="compare"/>сравнить</a></li>
-                <li><a href="#" class="header_top top-user_menu_cart"><img src="img/cart.svg" width="12" height="12" alt="cart"/>корзина</a></li>
-                <!--Add the the type-->
-              </li>
+            <ul class="user-menu">
+              <li class="user-menu_item user-menu_item--signin"><a href="#"><img src="img/user.svg" width="12" height="12" alt="user">Войти</a></li>
+              <li class="user-menu_item user-menu_item--compare"><a href="#"><img src="img/compare.svg" width="12" height="12" alt="compare"/>Сравнить</a></li>
+              <li class="user-menu_item user-menu_item--cart"><a href="#"><img src="img/cart.svg" width="12" height="12" alt="cart"/>Корзина</a></li>
             </ul>
           </div>
           <div class="header_bot">
@@ -53,9 +48,7 @@
   </header>
     <main class="main">
       <div class="container">
-        <!--Add after the getting skills-->
         <div class="main_item">
-          <!--Add SVG-image after getting the skill of it-->
           <h2 class="main_item-title">о нас</h2>
           <p>
             Огромный выбор гаджетов не оставит равнодушным гика, который есть в
@@ -78,76 +71,20 @@
             Вы можете забрать товар сами, заев в наш офис. Заодно, вы сможете
             проверить работоспособность покупку. Всякое бывает.
           </p>
-          <a href="#" class="main_item-map">
-            <!--add link-->
-            <img src="/img/map-screenshot.png" width="560" height="220" alt="Карта" />
-          </a>
+          <a href="#" class="main_item-map"><img src="/img/map-screenshot.png" width="560" height="220" alt="Карта" /></a>
           <a href="#" class="btn main_item-btn">Напишите нам</a>
         </div>
       </div>
-        <div class="popup_form">
-          <button class="popup_btn-close">
-            <img src="/img/modal-close.svg" alt="Закрыть" />
-          </button>
-          <form
-            method="get"
-            id="popup--custumers-request"
-            action="#"
-          >
-            <!--fix the "#"-->
-            <div class="popup_top-container">
-              <fieldset class="popup_form--name">
-                <label>Ваше имя:</label>
-                <input name="Имя, Фамилия" type="text" value="Имя Фамилия" />
-              </fieldset>
-              <fieldset class="popup-form--email">
-                <label>Ваш e-mail:</label>
-                <input name="Адрес эл. почты" type="text" value="email@example.com" />
-              </fieldset>
-            </div>
-            <fieldset class="popup_form--custumers-message">
-              <label>Текст письма</label>
-              <input name="Комментарий к заявке" type="text" value="В свободной форме" />
-            </fieldset>
-            <button type="submit">отправить</button>
-          </form>
-        </div>
-        <div class="popup_map">
-          <map name="map">
-            <button class="popup_btn-close">
-              <img src="/img/modal-close.svg" width="55px" height="55px" alt="Закрыть" />
-            </button>
-            <img src="/img/map-screenshot.png" width="960px" height="560px" alt="Карта" />
-          </map>
-        </div>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer_inner">
           <div class="footer_top">
             <img src="img/logo-device.svg" width="165" height="35" class="footer_top-logo" alt="Logo DEVICE" />
-            <ul class="footer_top top-user-menu">
-              <li>
-                <a href="#" class="footer_top top-user-menu_signin">
-                  <img src="img/user.svg" alt="user">
-                  <!--Add the type, popapp-->
-                  Войти
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer_top top-user-menu_compare">
-                  <img src="img/compare.svg" alt="compare" />
-                  <!--Add the type, link-->
-                  Сравнить
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer_top top-user-menu_cart">
-                  <img src="img/cart.svg" alt="cart" />
-                  Корзина
-                  <!--Add the the type, link-->
-                </a>
-              </li>
+            <ul class="user-menu">
+              <li class="user-menu_item user-menu_item--signin"><a href="#"><img src="img/user.svg" width="12" height="12" alt="user">Войти</a></li>
+              <li class="user-menu_item user-menu_item--compare"><a href="#"><img src="img/compare.svg" width="12" height="12" alt="compare"/>Сравнить</a></li>
+              <li class="user-menu_item user-menu_item--cart"><a href="#"><img src="img/cart.svg" width="12" height="12" alt="cart"/>Корзина</a></li>
             </ul>
           </div>
           <div class="footer_mid">
@@ -181,5 +118,35 @@
         href="https://htmlacademy.ru/intensive/htmlcss"
         >HTML и CSS, уровень 1</a>».
     </p>
+    <div class="modal modal--form modal--active">
+      <button class="modal_btn-close">
+        <img src="/img/modal-close.svg" alt="Закрыть" />
+      </button>
+      <form
+        method="get"
+        id="modal--custumers-request"
+        action="#"
+      >
+        <fieldset>
+          <div class="modalform-inner">
+            <label>ваше имя:</label>
+            <label>ваш e-mail:</label>
+            <input type="text" placeholder="Имя фамилия">
+            <input type="text" placeholder="email@example.com">
+          </div>
+        </fieldset>
+        <fieldset class="modal_form--custumers-message">
+          <label>текст письма:</label>
+          <textarea name="Комментарий к заявке" placeholder="В свободной форме" /></textarea>
+        </fieldset>
+        <button class="btn" type="submit">отправить</button>
+      </form>
+    </div>
+    <div class="modal modal--map modal--active">
+      <img src="/img/modal-map.png" width="960px" height="560px" alt="Карта" />
+      <button class="modal_btn-close">
+          <img src="/img/modal-close.svg" width="55px" height="55px" alt="Закрыть" />
+      </button>
+    </div>
   </body>
 </html>
