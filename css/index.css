@@ -1,31 +1,31 @@
 @font-face {
   font-family: "Opensans";
-  src: url("/fonts/web/Opensans.woff");
-  src: url("/fonts/web/Opensans.woff2");
+  src: url("../fonts/web/Opensans.woff");
+  src: url("../fonts/web/Opensans.woff2");
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
   font-family: "Opensans";
-  src: url("/fonts/web/opensanslight.woff");
-  src: url("/fonts/web/opensanslight.woff2");
+  src: url("../fonts/web/opensanslight.woff");
+  src: url("../fonts/web/opensanslight.woff2");
 font-weight: 300;
 font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/web/gilroylight.woff");
-  src: url("/fonts/web/gilroylight.woff2");
+  src: url("../fonts/web/gilroylight.woff");
+  src: url("../fonts/web/gilroylight.woff2");
 font-weight: 300;
 font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/web/gilroyextrabold.woff");
-  src: url("/fonts/web/gilroyextrabold.woff2");
+  src: url("../fonts/web/gilroyextrabold.woff");
+  src: url("../fonts/web/gilroyextrabold.woff2");
 font-weight: 800;
 font-style: normal;
 }
@@ -75,6 +75,7 @@ body {
 
 .header {
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -88,11 +89,20 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   background-color: #f7e296;
+  padding-bottom: 55px;
 }
 
 .header_logo img {
   position: relative;
   transform: translateY(-50%);
+}
+
+.header_logo:hover > img{
+  opacity: 0.6;
+}
+
+.header_logo:active > img{
+  opacity: 0.3;
 }
 
 .header_top {
@@ -113,7 +123,17 @@ body {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.15px;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0);
+  opacity: 0.3;
+}
+
+.header_top-search:hover > input {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.header_top-search:active > input {
+  color: rgba(0, 0, 0, 0);
 }
 
 .user-menu {
@@ -521,7 +541,6 @@ ul.footer_top.top-user-menu {
   display: none;
   position: fixed;
   width: 960px;
-  height: 560px;
   top: 10%;
   background-color: #ffffff;
   font-family: Gilroy;
@@ -604,7 +623,7 @@ span {
 .catalog_content-item {
   margin-left: 40px;
   position: relative;
-}
+}x
 
 .catalog_content-item-title {
   font-family: "Gilroy";
