@@ -30,6 +30,39 @@ font-weight: 800;
 font-style: normal;
 }
 
+/* Альтернативный для Gilroy */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,800");
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:800");
+font-weight: 800;
+font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:300");
+font-weight: 300;
+font-style: normal;
+}
+
+/* Альтернативный для OpenSans */
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400');
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("https://fonts.googleapis.com/css?family=Alegreya+Sans:400");
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+font-weight: 300;
+font-style: normal;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -54,24 +87,6 @@ body {
 .visually-hidden {
   display: none;
 }
-
-/*
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-*/
 
 .header {
   padding-top: 40px;
@@ -624,6 +639,8 @@ ul.footer_top.top-user-menu {
 
 .main_item {
   width: 560px;
+  display: flex;
+  flex-direction: column;
 }
 
 .main_item-delivery {
@@ -695,9 +712,9 @@ ul.footer_top.top-user-menu {
   opacity: 0.3;
 }
 
-/* .catalog_inner {
-  background: linear-gradient(to right, #ebebeb 33%, white 33%)
-} */
+.catalog_inner {
+  background: linear-gradient(to right, #ebebeb 25%, white 25%)
+}
 
 .catalog {
   display: flex;
@@ -725,7 +742,6 @@ ul.footer_top.top-user-menu {
 
 .filter-item {
   display: flex;
-  widows: 100%;
   flex-wrap: wrap;
 }
 
@@ -851,7 +867,6 @@ span {
 .catalog_content-item-title {
   font-family: "Gilroy";
   font-size: 18px;
-  text-transform: capitalize;
   font-weight: 800;
   color: #000000;
   line-height: 1.33;
