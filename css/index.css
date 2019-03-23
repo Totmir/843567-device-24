@@ -30,15 +30,35 @@ font-weight: 800;
 font-style: normal;
 }
 
+/* Альтернативный для OpenSans */
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400');
+
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("https://fonts.googleapis.com/css?family=Alegreya+Sans:400");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+font-weight: 300;
+font-style: normal;
+}
+
 /* Альтернативный для Gilroy */
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,800");
+
 @font-face {
   font-family: "Montserrat";
   src: url("https://fonts.googleapis.com/css?family=Montserrat:800");
 font-weight: 800;
 font-style: normal;
 }
+
 @font-face {
   font-family: "Montserrat";
   src: url("https://fonts.googleapis.com/css?family=Montserrat:300");
@@ -46,21 +66,7 @@ font-weight: 300;
 font-style: normal;
 }
 
-/* Альтернативный для OpenSans */
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400');
-@font-face {
-  font-family: "AlegreyaSans";
-  src: url("https://fonts.googleapis.com/css?family=Alegreya+Sans:400");
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-  font-family: "AlegreyaSans";
-  src: url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
-font-weight: 300;
-font-style: normal;
-}
 
 
 body {
@@ -139,7 +145,7 @@ body {
 .header_top-search > input {
   border: none;
   background-color: #f7e296;
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -175,7 +181,7 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 15px;
   line-height: 2;
   font-weight: 300;
@@ -256,7 +262,7 @@ li.header_quarter-line-wrapper {
 }
 
 .header_menu-item > a {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
@@ -331,7 +337,7 @@ li.header_quarter-line-wrapper {
 .header_bot .header_dropdown {
   width: 50%;
   columns: 3 auto;
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.15px;
@@ -363,7 +369,7 @@ li.header_quarter-line-wrapper {
 }
 
 h2 {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 47px;
   font-weight: 800;
   color: black;
@@ -385,7 +391,7 @@ h2::first-letter {
 }
 
 p {
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 15px;
   line-height: 2;
   font-weight: 300;
@@ -436,7 +442,7 @@ p {
 }
 
 .breadcrumbs_item {
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 14px;
   text-transform: capitalize;
   font-weight: 300;
@@ -467,7 +473,7 @@ p {
 }
 
 legend {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 800;
@@ -476,7 +482,7 @@ legend {
 }
 
 label {
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 14px;
   line-height: 2.86;
   font-weight: 300;
@@ -494,7 +500,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 15px;
   line-height: 2;
   font-weight: 300;
@@ -548,7 +554,7 @@ ul.footer_top.top-user-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
@@ -562,7 +568,7 @@ ul.footer_top.top-user-menu {
   align-items: center;
   justify-content: space-between;
   letter-spacing: 1.6px;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
@@ -579,7 +585,7 @@ ul.footer_top.top-user-menu {
 }
 
 .footer_bot {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
@@ -740,9 +746,16 @@ ul.footer_top.top-user-menu {
   padding-left: 60px;
 }
 
-.filter-item {
-  display: flex;
-  flex-wrap: wrap;
+.catalog_filter {/*
+  position: absolute; */
+  font-family: "Gilroy", "Montserrat", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: black;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  background-color: #d9d9d9;
 }
 
 .filter-item label {
@@ -793,6 +806,10 @@ ul.footer_top.top-user-menu {
   background: url(../img/radio-on.svg) no-repeat;
 }
 
+input[name="cost"] {
+  cursor: pointer;
+}
+
 .filter-item > label:hover {
   opacity: 0.6;
 }
@@ -813,7 +830,7 @@ ul.footer_top.top-user-menu {
 }
 
 span {
-  font-family: "Opensans";
+  font-family: "Opensans", "AlegreyaSans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 40px;
@@ -822,7 +839,6 @@ span {
 }
 
 .catalog_content {
-  padding-top: 70px;
   padding-bottom: 70px;
 }
 
@@ -834,7 +850,20 @@ span {
   position: relative;
 }
 
-.catalog_content-container div:nth-child(4)::after {
+.catalog_content-sort {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 73px;
+}
+
+.catalog_content-sort > ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+}
+
+.catalog_content-item--new::after {
   content: "New";
   position: absolute;
   top: 25px;
@@ -865,7 +894,7 @@ span {
 }
 
 .catalog_content-item-title {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 800;
   color: #000000;
@@ -874,7 +903,7 @@ span {
 
 .catalog_content-item-price {
   position: relative;
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 300;
@@ -891,19 +920,15 @@ span {
   top: 0;
   width: 360px;
   height: 360px;
+  padding-top: 10px;
   background-color: rgba(238, 238, 238, 0.7);
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.popup-inner .popup-item {
-  width: 200px;
-  left: 50%;
-  text-align: center;
-  font-family: opensans;
-  font-size:  13px;
-  line-height: 36px;
+.popup-item {
+  margin-top: 10px;
 }
 
 .popup-item:nth-of-type(2) {
@@ -939,7 +964,7 @@ span {
 }
 
 .catalog_content-nav-btn {
-  font-family: "Gilroy";
+  font-family: "Gilroy", "Montserrat", sans-serif;
   font-size: 16px;
   text-transform: capitalize;
   line-height: 1.5;
