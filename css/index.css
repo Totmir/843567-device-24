@@ -761,6 +761,7 @@ h2::first-letter {
 .promo-slider_image {
   object-fit: contain;
   width: 50%;
+  height: 590px;
 }
 
 .promo-slider_showmore {
